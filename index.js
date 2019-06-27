@@ -1,4 +1,4 @@
-import loadCSV from './load-csv'
+import loadCSV from './utilities/load-csv'
 const tf = require('@tensorflow/tfjs');
 require('@tensorflow/tfjs');
 import knn from './knn';
