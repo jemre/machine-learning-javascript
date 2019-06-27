@@ -1,9 +1,9 @@
 import loadCSV from './utilities/load-csv'
 const tf = require('@tensorflow/tfjs');
 require('@tensorflow/tfjs');
-import knn from './knn';
+import knn from './algorithms/knn';
 
-let {features, labels, testFeatures, testLabels} = loadCSV('kc_house_data.csv', {
+let {features, labels, testFeatures, testLabels} = loadCSV('data-sets/kc_house_data.csv', {
   shuffle: true,
   splitTest: 10,
   dataColumns: ['lat', 'long', 'sqft_lot', 'sqft_living'],
